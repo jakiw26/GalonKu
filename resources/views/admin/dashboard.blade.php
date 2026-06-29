@@ -39,6 +39,7 @@
         <script src="js/color-modes.js"></script> --}}
         <script src="{{ asset('template/vendors/js/vendor.bundle.base.js') }}"></script>
         <link rel="stylesheet" href="{{ asset('template/vendors/@coreui/chartjs/css/coreui-chartjs.css') }}">
+        <link rel="stylesheet" href="{{ asset('template/vendors/@coreui/coreio/js/coreui.bundle.min.js') }}">
     </head>
 
      <body>
