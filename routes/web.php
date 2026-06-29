@@ -8,8 +8,10 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/dashboard', [DashboardController::class, 'index']);
-Route::get('/admin/test', [DashboardController::class, 'test']);
+Route::get('/admin/dashboard', [DashboardController::class, 'admin']);
+Route::get('/customer/dashboard', [DashboardController::class, 'customer']);
+Route::get('/kurir/dashboard', [DashboardController::class, 'kurir']);
+
 
 Route::middleware('guest')->group(function () {
     // Login

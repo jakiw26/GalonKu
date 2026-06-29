@@ -13,12 +13,8 @@ return new class extends Migration
     {
         Schema::create('pengiriman', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('pesanan_id')
-                ->constrained('pesanan')
-                ->cascadeOnDelete();
-            $table->foreignId('kurir_id')
-                ->constrained('users')
-                ->cascadeOnDelete();
+            $table->foreignId('pesanan_id')->unique()->constrained('pesanan')->cascadeOnDelete();
+            $table->foreignId('kurir_id')->constrained('users')->cascadeOnDelete();
             $table->timestamp('tanggal_kirim')->nullable();
             $table->enum('status_pengiriman', [
                 'siap dikirim',

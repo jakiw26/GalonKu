@@ -18,11 +18,16 @@ class Pengirim extends Model
 
     public function pesanan()
     {
-        return $this->belongsTo(Pesanan::class);
+        return $this->belongsTo(
+            Pesanan::class,
+            'pesanan_id'
+        );
     }
-
     public function kurir()
     {
-        return $this->belongsTo(User::class, 'kurir_id');
+        return $this->belongsTo(
+            User::class,
+            'kurir_id'
+        );
     }
 }

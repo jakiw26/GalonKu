@@ -23,8 +23,9 @@ return new class extends Migration
                 'RO',
                 'demineral'
             ]);
+            $table->string('gambar');
             $table->integer('harga');
-            $table->integer('stok')->default(0);
+            $table->text('deskripsi')->nullable();
             $table->timestamps();
         });
     }

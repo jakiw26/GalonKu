@@ -13,9 +13,7 @@ return new class extends Migration
     {
         Schema::create('pembayaran', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('pesanan_id')
-                ->constrained('pesanan')
-                ->cascadeOnDelete();
+            $table->foreignId('pesanan_id')->unique()->constrained('pesanan')->cascadeOnDelete();
             $table->enum('metode', [
                 'cash',
                 'transfer',

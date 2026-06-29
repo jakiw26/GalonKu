@@ -21,11 +21,16 @@ class DetailPesanan extends Model
 
     public function pesanan()
     {
-        return $this->belongsTo(Pesanan::class);
+        return $this->belongsTo(
+            Pesanan::class,
+            'pesanan_id'
+        );
     }
-
     public function produk()
     {
-        return $this->belongsTo(Produk::class);
+        return $this->belongsTo(
+            Produk::class,
+            'produk_id'
+        );
     }
 }

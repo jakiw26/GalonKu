@@ -6,12 +6,16 @@ use App\Http\Controllers\Controller;
 
 class DashboardController extends Controller
 {
-    public function index()
+    public function admin()
     {
         return view('admin.dashboard');
     }
-    public function test()
+    public function customer()
     {
-        return view('admin.test');
+        return view('customer.dashboard');
+    }
+    public function kurir()
+    {
+        return view('kurir.dashboard');
     }
 }

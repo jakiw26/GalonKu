@@ -14,12 +14,16 @@ class Produk extends Model
         'nama_produk',
         'jenis_galon',
         'jenis_air',
+        'gambar',
         'harga',
-        'stok'
+        'deskripsi'
     ];
 
-    public function detailPesanan()
+     public function detailPesanan()
     {
-        return $this->hasMany(DetailPesanan::class);
+        return $this->hasMany(
+            DetailPesanan::class,
+            'produk_id'
+        );
     }
 }

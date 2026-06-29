@@ -26,26 +26,38 @@ class Pesanan extends Model
 
     public function user()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(
+            User::class
+        );
     }
 
     public function detail()
     {
-        return $this->hasMany(DetailPesanan::class);
+        return $this->hasMany(
+            DetailPesanan::class,
+            'pesanan_id'
+        );
     }
 
     public function pembayaran()
     {
-        return $this->hasOne(Pembayaran::class);
+        return $this->hasOne(
+            Pembayaran::class,
+            'pesanan_id'
+        );
     }
-
     public function pengiriman()
     {
-        return $this->hasOne(Pengirim::class);
+        return $this->hasOne(
+            Pengirim::class,
+            'pesanan_id'
+        );
     }
-
     public function review()
     {
-        return $this->hasOne(Review::class);
+        return $this->hasOne(
+            Review::class,
+            'pesanan_id'
+        );
     }
 }

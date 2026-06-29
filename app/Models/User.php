@@ -19,6 +19,20 @@ class User extends Authenticatable
 {
     /** @use HasFactory<UserFactory> */
     use HasFactory, Notifiable;
+    protected $fillable = [
+
+        'name',
+        'email',
+        'phone',
+        'role',
+        'password'
+
+    ];
+
+    protected $hidden = [
+        'password',
+        'remember_token'
+    ];
 
     /**
      * Get the attributes that should be cast.
@@ -33,15 +47,30 @@ class User extends Authenticatable
         ];
     }
 
-     public function pesanan()
+    public function pesanan()
     {
-        return $this->hasMany(Pesanan::class);
+
+        return $this->hasMany(
+            Pesanan::class,
+            'user_id'
+        );
     }
 
     // Kurir → banyak pengiriman
     public function pengiriman()
     {
-        return $this->hasMany(Pengirim::class, 'kurir_id');
+        return $this->hasMany(
+            Pengirim::class,
+            'kurir_id'
+        );
+    }
+
+    public function alamat()
+    {
+
+        return $this->hasMany(
+            Alamatcust::class,
+            'user_id'
+        );
     }
 }
-

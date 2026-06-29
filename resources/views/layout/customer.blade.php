@@ -60,58 +60,25 @@
                     Dashboard
                 </a>
             </li>
+
             <li class="nav-title">UI Elements</li>
             <li class="nav-item">
                 <a class="nav-link" href="users.html">
                     <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path fill="var(--ci-primary-color, currentcolor)"
-                            d="M256 256a112 112 0 1 0-112-112 112 112 0 0 0 112 112zm0 32c-92.64 0-168 75.36-168 168a24 24 0 0 0 48 0c0-66.17 53.83-120 120-120s120 53.83 120 120a24 24 0 0 0 48 0c0-92.64-75.36-168-168-168z" />
+                            d="M256 0C141.1 0 48 93.1 48 208c0 144 208 304 208 304s208-160 208-304C464 93.1 370.9 0 256 0zm0 288a80 80 0 1 1 0-160 80 80 0 0 1 0 160z" />
                     </svg>
-                    Users
+                    Alamat
                 </a>
-            </li>
-
-            <li class="nav-group">
-                <a class="nav-link nav-group-toggle" href="#">
-                    <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path fill="var(--ci-primary-color, currentcolor)"
-                            d="m491.693 256.705-54.957-49.461 16.407-13.406a80.5 80.5 0 0 0 18.363-21.522c18.148-31.441 12.867-70.042-13.144-96.052s-64.612-31.291-96.051-13.142a80.5 80.5 0 0 0-21.52 18.362l-13.408 16.407-49.461-54.956-.579-.611a24.03 24.03 0 0 0-33.941 0l-65.6 65.605 1.19 23.7 33.108 27.056a48.6 48.6 0 0 1 11.079 12.889c10.807 18.722 7.57 41.8-8.056 57.426s-38.7 18.862-57.426 8.058a48.7 48.7 0 0 1-12.9-11.086l-27.047-33.1-23.7-1.189-71.26 71.26a24 24 0 0 0 0 33.942l175.357 175.359a80 80 0 0 0 113.138 0L492.3 291.225a24.03 24.03 0 0 0 0-33.94ZM288.657 449.617a48 48 0 0 1-67.883 0L51.069 279.911l53.1-53.095 15.91 19.473.1.119a80.5 80.5 0 0 0 21.521 18.363c31.441 18.149 70.041 12.867 96.052-13.144s31.291-64.61 13.143-96.05a80.5 80.5 0 0 0-18.363-21.521l-19.591-16.01 47.124-47.124 56.018 62.241 24.282-.579 25.062-30.67a48.6 48.6 0 0 1 12.888-11.078c18.722-10.807 41.8-7.569 57.426 8.056s18.864 38.7 8.057 57.426a48.6 48.6 0 0 1-11.079 12.889l-30.67 25.061-.58 24.282 62.243 56.018Z"
-                            class="ci-primary" />
-                    </svg>
-                    Detail Produk
-                </a>
-                <ul class="nav-group-items compact">
-                    <li class="nav-item">
-                        <a class="nav-link" href="components/accordion.html">
-                            <span class="nav-icon"><span class="nav-icon-bullet"></span></span>
-                            <i class="bi bi-box-seam nav-icon"></i>
-                            Produk
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="components/alerts.html">
-                            <span class="nav-icon"><span class="nav-icon-bullet"></span></span>
-                            <i class="bi bi-cart-check-fill nav-icon"></i>
-                            Pesanan
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="components/badge.html">
-                            <span class="nav-icon"><span class="nav-icon-bullet"></span></span>
-                            <i class="bi bi-receipt-cutoff nav-icon"></i>
-                            Detail Pesanan
-                        </a>
-                    </li>
-                </ul>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link" href="pembayaran.html">
                     <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path fill="var(--ci-primary-color, currentcolor)"
-                            d="M464 96H48C21.49 96 0 117.49 0 144v224c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V144c0-26.51-21.49-48-48-48zm-16 256H64V160h384v192zM256 176c-44.18 0-80 35.82-80 80s35.82 80 80 80 80-35.82 80-80-35.82-80-80-80zm0 128c-26.47 0-48-21.53-48-48s21.53-48 48-48 48 21.53 48 48-21.53 48-48 48z" />
+                            d="M64 32h384v448H64V32zm64 64v64h256V96H128zm0 128v64h256v-64H128zm0 128v64h128v-64H128z" />
                     </svg>
-                    Pembayaran
+                    Produk
                 </a>
             </li>
 
@@ -119,9 +86,29 @@
                 <a class="nav-link" href="pengiriman.html">
                     <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path fill="var(--ci-primary-color, currentcolor)"
-                            d="M48 80C21.49 80 0 101.49 0 128v224c0 26.51 21.49 48 48 48h16a80 80 0 0 0 160 0h64a80 80 0 0 0 160 0h16c26.51 0 48-21.49 48-48V208c0-26.51-21.49-48-48-48h-80V128c0-26.51-21.49-48-48-48H48zm288 96h80v64h-80v-64zM160 352a48 48 0 1 1 48-48 48 48 0 0 1-48 48zm224 0a48 48 0 1 1 48-48 48 48 0 0 1-48 48z" />
+                            d="M96 32h320v64H96zM64 128h384v320H64V128zm96 64v64h192v-64H160zm0 112v64h192v-64H160z" />
                     </svg>
-                    Pengiriman
+                    Pesanan
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="pengiriman.html">
+                    <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="var(--ci-primary-color, currentcolor)"
+                            d="M96 64h320v48H96zM96 176h320v48H96zM96 288h320v48H96zM96 400h200v48H96z" />
+                    </svg>
+                    Detail Pesanan
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="pengiriman.html">
+                    <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="var(--ci-primary-color, currentcolor)"
+                            d="M48 96h416v320H48V96zm64 96v64h288v-64H112zm0 96v32h128v-32H112z" />
+                    </svg>
+                    Pembayaran
                 </a>
             </li>
 
@@ -133,9 +120,9 @@
                 <a class="nav-link" href="laporan.html">
                     <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path fill="var(--ci-primary-color, currentcolor)"
-                            d="M128 448V240h64v208h-64zm96 0V128h64v320h-64zm96 0V304h64v144h-64zM96 464h320v32H96z" />
+                            d="M256 32l68 138 152 22-110 107 26 151-136-72-136 72 26-151L36 192l152-22 68-138z" />
                     </svg>
-                    Laporan
+                    Review
                 </a>
             </li>
 
