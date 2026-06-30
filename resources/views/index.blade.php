@@ -163,8 +163,10 @@
 
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-4 text-primary">
-                💧 GalonKu
+            <a class="navbar-brand fw-bold fs-4 text-primary d-flex align-items-center">
+                <img src="{{ asset('template/assets/img/logogalon.png') }}" alt="Logo GalonKu" width="50px"
+                    class="me-2">
+                GalonKu
             </a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
                 <span class="navbar-toggler-icon"></span>
