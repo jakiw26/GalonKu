@@ -186,9 +186,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#kontak">Kontak</a>
                     </li>
+                    <li class="nav-item ms-lg-5 mt-2 mt-lg-0">
+                        <a class="btn btn-primary px-4" href="{{ route('login') }}">Login</a>
+                    </li>
                 </ul>
             </div>
         </div>
+
     </nav>
 
     <!-- HERO -->
