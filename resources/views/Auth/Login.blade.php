@@ -42,8 +42,8 @@
             <div class="mb-4">
                 <div class="flex justify-between items-center mb-1">
                     <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-                    {{-- <a href="{{ route('password.request') }}" class="text-xs text-blue-600 hover:underline">Lupa password?</a> --}}
-                    <a href="#" class="text-xs text-blue-600 hover:underline">Lupa password?</a>
+                    <a href="{{ route('password.request') }}" class="text-xs text-blue-600 hover:underline">Lupa password?</a>
+                    {{-- <a href="#" class="text-xs text-blue-600 hover:underline">Lupa password?</a> --}}
                 </div>
                 <input
                     type="password"
@@ -69,8 +69,8 @@
  
         <p class="text-center text-sm text-gray-500 mt-6">
             Belum punya akun?
-            {{-- <a href="{{ route('register') }}" class="text-blue-600 font-medium hover:underline">Daftar sekarang</a> --}}
-            <a href="#" class="text-blue-600 font-medium hover:underline">Daftar sekarang</a>
+            <a href="{{ route('register') }}" class="text-blue-600 font-medium hover:underline">Daftar sekarang</a>
+            {{-- <a href="#" class="text-blue-600 font-medium hover:underline">Daftar sekarang</a> --}}
         </p>
  
     </div>
