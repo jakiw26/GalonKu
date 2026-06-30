@@ -35,15 +35,18 @@ Route::delete('/admin/produk/delete/{id}', [ProdukController::class, 'destroy'])
 //profile
 Route::get('/admin/profile', [ProfilController::class, 'admin']);
 
-//login/register
+//login
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 
+//register
 Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
 Route::post('/register', [RegisterController::class, 'register']);
 
+//lupa Pw
 Route::get('/lupa-password', [LupaPwController::class, 'showLinkRequestForm'])->name('password.request');
 Route::post('/lupa-password', [LupaPwController::class, 'sendResetLinkEmail'])->name('password.email');
 
+//reset Pw
 Route::get('/reset-password/{token}', [ResetPwController::class, 'showResetForm'])->name('password.reset');
 Route::post('/reset-password', [ResetPwController::class, 'reset'])->name('password.update');
