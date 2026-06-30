@@ -50,27 +50,19 @@ class User extends Authenticatable
     public function pesanan()
     {
 
-        return $this->hasMany(
-            Pesanan::class,
-            'user_id'
-        );
+        return $this->hasMany(Pesanan::class,'user_id');
     }
 
     // Kurir → banyak pengiriman
     public function pengiriman()
     {
-        return $this->hasMany(
-            Pengirim::class,
-            'kurir_id'
-        );
+        return $this->hasMany(Pengirim::class,'kurir_id');
     }
 
     public function alamat()
     {
 
-        return $this->hasMany(
-            Alamatcust::class,
-            'user_id'
-        );
+        return $this->hasMany(Alamatcust::class,'user_id');
     }
+    
 }

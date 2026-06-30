@@ -21,9 +21,6 @@ class Produk extends Model
 
      public function detailPesanan()
     {
-        return $this->hasMany(
-            DetailPesanan::class,
-            'produk_id'
-        );
+        return $this->hasMany(DetailPesanan::class,'produk_id');
     }
 }
