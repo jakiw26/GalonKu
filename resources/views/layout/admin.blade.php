@@ -61,7 +61,7 @@
                 </a>
                 <ul class="nav-group-items compact">
                     <li class="nav-item">
-                        <a class="nav-link" href="components/accordion.html">
+                        <a class="nav-link" href="/admin/produk">
                             <span class="nav-icon"><span class="nav-icon-bullet"></span></span>
                             <i class="bi bi-box-seam nav-icon"></i>
                             Produk

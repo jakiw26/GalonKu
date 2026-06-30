@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+use App\Http\Requests;
+use App\Models\Produk;
+
+class ProdukController extends Controller
+{
+    public function index()
+    {
+        $produk = Produk::all();
+        return view('admin.produk.index', compact('produk'));
+    }
+}

@@ -5,6 +5,8 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfilController;
+use App\Http\Controllers\ProdukController;
+
 
 Route::get('/', function () {
     return view('index');
@@ -20,6 +22,12 @@ Route::get('/admin/user', [UserController::class, 'index']);
 Route::post('/admin/user/store', [UserController::class, 'store']);
 Route::put('/admin/user/update/{id}', [UserController::class, 'update']);
 Route::delete('/admin/user/delete/{id}', [UserController::class, 'destroy']);
+
+//Admin Users
+Route::get('/admin/produk', [ProdukController::class, 'index']);
+Route::post('/admin/produk/store', [ProdukController::class, 'store']);
+Route::put('/admin/produk/update/{id}', [ProdukController::class, 'update']);
+Route::delete('/admin/produk/delete/{id}', [ProdukController::class, 'destroy']);
 
 //profile
 Route::get('/admin/profile', [ProfilController::class, 'admin']);

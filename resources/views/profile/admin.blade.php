@@ -118,55 +118,75 @@
                     <div class="card shadow-sm">
 
                         <div class="card-header">
-                            <h5 class="mb-0">Profil Admin</h5>
+                            <h5 class="mb-0">My Profile</h5>
                         </div>
 
                         <div class="card-body">
 
-                            <div class="row align-items-center">
+                            <div class="row">
 
-                                <!-- KIRI: FOTO -->
-                                <div class="col-md-4 text-center">
-                                    <img src="{{ asset('template/assets/img/avatars/8.jpg') }}" class="rounded-circle mb-3"
-                                        width="140" height="140" alt="profile">
+                                <div class="col-md-4 text-center border-end">
+
+                                    <img src="{{ asset('template/assets/img/avatars/8.jpg') }}"
+                                        class="rounded-circle shadow mb-3" width="150" height="150" alt="profile">
 
                                     <h5 class="mb-0">Nama Admin</h5>
-                                    <small class="text-muted">admin@email.com</small>
-                                </div>
+                                    <small class="text-muted">Email Admin</small>
 
-                                <!-- KANAN: DATA -->
-                                <div class="col-md-8">
-
-                                    <div class="mb-3">
-                                        <label class="form-label fw-semibold">Nama</label>
-                                        <input type="text" class="form-control" value="Nama Admin" disabled>
+                                    <div class="mt-2">
+                                        <span class="badge bg-success">Admin</span>
                                     </div>
 
-                                    <div class="mb-3">
-                                        <label class="form-label fw-semibold">Email</label>
-                                        <input type="email" class="form-control" value="admin@email.com" disabled>
-                                    </div>
+                                    <hr>
 
-                                    <div class="mb-3">
-                                        <label class="form-label fw-semibold">Role</label>
-                                        <input type="text" class="form-control" value="Admin" disabled>
-                                    </div>
-
-                                    <button class="btn btn-primary w-100 mt-2">
+                                    <button class="btn btn-primary w-100 mb-2">
                                         Edit Profil
+                                    </button>
+
+                                    <button class="btn btn-outline-danger w-100">
+                                        Logout
                                     </button>
 
                                 </div>
 
+                                <div class="col-md-8">
+                                    <div class="card border-0 shadow-sm">
+                                        <div class="card-body">
+                                            <h6 class="fw-bold">Data Admin</h6>
+                                            <div class="row mt-3">
+
+                                                <div class="col-6 mb-2">
+                                                    <small class="text-muted">Nama</small>
+                                                    <div class="fw-semibold">Nama Admin</div>
+                                                </div>
+
+                                                <div class="col-6 mb-2">
+                                                    <small class="text-muted">Email</small>
+                                                    <div class="fw-semibold">admin@email.com</div>
+                                                </div>
+
+                                                <div class="col-6 mb-2">
+                                                    <small class="text-muted">No Telepon</small>
+                                                    <div class="fw-semibold">081234567890</div>
+                                                </div>
+
+                                                <div class="col-6 mb-2">
+                                                    <small class="text-muted">Role</small>
+                                                    <div class="fw-semibold">Admin</div>
+                                                </div>
+
+                                                <div class="col-6 mb-2">
+                                                    <small class="text-muted">Status</small>
+                                                    <div class="fw-semibold text-success">Aktif</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
             </div>
-
         </div>
-    </div>
-@endsection
+    @endsection
